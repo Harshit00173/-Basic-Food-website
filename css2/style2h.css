@@ -1,0 +1,303 @@
+/* CSS RESET */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* container is my own thinking not important or not in use */
+/* .container{
+    height: 200vh;
+    width: 200vw;
+    
+} */
+
+.buddy{
+    position: fixed;
+    font-family: 'Balsamiq Sans', cursive;
+    padding: 85px 0px;
+}
+
+
+/* This is for navigation bar */
+#navbar{
+    /* position relative cover whole line whie position absolute cover only navbar items */
+    /* position:relative; */
+    /* top: 0px; */
+    /* position:sticky; */
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    /* width:100%; */
+    
+}
+#navbar::before{
+    content:" ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+/* This is for text written on in navigation bar  */
+.logo{
+    /* width: 108px; */
+    /* position: fixed; */
+    position: sticky;
+    top: 0px;
+    width:10%;
+    
+}
+/* This is for img of logo  */
+.logo img{
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    padding-bottom:0px;
+    border-radius: 49px;
+
+}
+
+
+/* This is for styling for  listing in navigation bar */
+#navbar ul{
+    display: flex;
+    padding: 34px 91px;
+    list-style: none;
+    font-family: 'Balsamiq Sans', cursive;
+    width:68%;
+    
+    
+}
+
+#navbar ul li a {
+    color: black;
+    text-decoration: none;
+    /* font-size: 1.3em; */
+    padding: 5px 16px;
+    
+    
+}
+
+/* we can also use this insted of #navbar ul */
+/* .item{
+    
+    list-style: none;
+    padding: 25px 10px;
+
+} */
+
+
+#navbar ul li a:hover {
+    color: rgb(6, 7, 7);
+    background-color: aliceblue;
+    border-radius: 5px;
+
+}
+.search{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:20%;
+}
+.search input[type=text]{
+    text-align: center;
+    transition: all 2s ease-out;
+   
+}
+.search input[type=text]:hover{
+    height: 50px;
+    width: 300px;
+    /* padding: 59px; */
+    font-size: 1.3rem;
+background-color: aquamarine;
+}
+
+
+
+
+
+/* NOW CSS FOR SECTION PART */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+#home::before{
+    content:" ";
+    /* (../)in url is used bcoz we are in other folder i.e in style2 first we move outside from this then go to other i.e in img2  */
+    background:url(../img2/back2.jpg) no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    height:600px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#home p{
+    padding: 7px 120px;
+    color: rgb(1, 0, 0);
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+.h{
+    padding: 7px 120px;
+    color: rgb(1, 0, 0);
+    font-size: 3.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn {
+    padding: 12px 13px;
+    font-size: 1.5rem;
+    border-radius: 27px;
+    color: #030303;
+    background-color: aliceblue;
+    cursor:pointer;
+}
+.btn:hover{
+    color: aqua;
+    background-color: black;
+}
+.btn:visited{
+background-color: blue;
+
+}
+
+/* css for services section */
+.text-center{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.hprimary{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 8px;
+    font-family: 'Balsamiq Sans', cursive;
+    
+
+}
+.hsecondary{
+    text-align: center;
+    padding: 3px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#services{
+    /* border: 3px solid black; */
+    display: flex;
+    margin: 34px;
+
+}
+
+#services .box{
+    margin: 5px;
+    border: 2px solid red;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background-color: beige;
+}
+#services .box img{
+    height: 144px;
+    width: 205px;
+    display: block;
+    margin: auto;
+    padding: 3px;
+}
+
+/* css for clients section */
+#client-section{
+    height: 340px;
+    /* border: 3px solid black;   */
+}
+#client-section::before{
+    content:" ";
+    background:url(../img2/back1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height:58%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;   
+    
+}
+
+#clients{
+    
+    display: flex;
+    /* justify-content: center; */
+    
+}
+.client-items img {
+    height: 89px;
+    width: 106px;
+    display: block;
+    margin: auto;
+    padding: 18px 95px;
+}
+
+
+
+/* CONTACT SECTION */
+
+#contacts-section{
+    height: 394px;
+}
+
+#contacts-section::before{
+    content:" ";
+    background:url(../img2/contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    height:65%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;   
+    
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+   
+    
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-family: 'Bree Serif', serif;
+    
+}
+#contact-box form{
+    width: 40%;
+    
+}
+#contact-box label{
+    font-size: 1.3rem;
+  font-family: 'Balsamiq Sans', cursive;
+
+}
+.contact-items{
+    padding: 5px;
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
